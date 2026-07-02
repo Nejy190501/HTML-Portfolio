@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Yves's Portfolio</title>
+   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-   <h1>Jean Yves's Portfolio</h1> 
-   <h2>I'm a Web Developer</h2>
-   <hr />
-   <h3><a href="./public/movie-ranking.html">Ranking Project</a></h3>
-   <img src="./assets/images/Movies.png" alt="My Top 3 Movies Screenshot" height="200"/>
-   <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-   <img src="./assets/images/Birthday.png" alt="My Birthday Invitation Screenshoot" height="200" />
-   <hr/>
-   <a href="./public/about.html">About Me</a>
-   <a href="./public/contact.html">Contact Me</a>
+
+    <nav>
+        <a href="index.html" class="active">Portfolio</a>
+        <a href="public/about.html">About Me</a>
+        <a href="public/contact.html">Contact Me</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Jean Yves's Portfolio</h1> 
+            <h2>I'm a Web Developer</h2>
+            <p class="intro-text">Welcome to my portfolio! Check out some of the web development projects I've been working on.</p>
+        </header>
+
+        <main>
+            <div class="projects-grid">
+                <!-- Movie Ranking Project -->
+                <div class="project-card">
+                    <img src="./assets/images/Movies.png" alt="My Top 3 Movies Screenshot"/>
+                    <div class="project-info">
+                        <h3>Movie Ranking Project</h3>
+                        <a href="./public/movie-ranking.html">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Birthday Invite Project -->
+                <div class="project-card">
+                    <img src="./assets/images/Birthday.png" alt="My Birthday Invitation Screenshot" />
+                    <div class="project-info">
+                        <h3>Birthday Invite Project</h3>
+                        <a href="./public/birthday-invite.html">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Jean Yves Nkwane. All rights reserved.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
